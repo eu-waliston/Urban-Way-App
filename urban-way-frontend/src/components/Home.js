@@ -2,6 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 import fundo from './img/fundo.jpg';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+AOS.init();
+
 const Home = () => {
     return (
         <INITIAL_SECTION style={{ backgroundImage:`url(${fundo})` }} id="home">
