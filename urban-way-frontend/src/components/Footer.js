@@ -17,7 +17,7 @@ const FOOTER = styled.div`
     display: flex;
     text-align: center;
     position: relative;
-    margin-left: 42%;
+    margin-left: 46%;
     cursor: pointer;
     top: -15px;
     
