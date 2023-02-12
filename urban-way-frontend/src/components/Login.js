@@ -12,7 +12,9 @@ const Login = () => {
                 <ul>
                     <li className="cad__item">
                         <a href="/cadastro" className="cad__item">
+                           <Link to={"/register"} style={{textDecoration: "none", color: "#fff"}}>
                             <i class="bi bi-person"></i> Cadastre-se
+                           </Link>
                         </a>
                     </li>
 
@@ -31,7 +33,9 @@ const Login = () => {
                     </div>
                     <div class="form__btn">
                         <button type="submit" class="btn__ct">
-                            <i class="bi bi-door-open"></i> Login
+                            <Link to={"/"} className="fim">
+                                <i class="bi bi-door-open"></i> Login
+                            </Link>
                         </button>
                     </div>
                 </div>
@@ -123,5 +127,9 @@ const SECTION = styled.section`
         margin-left: 25%;
     }
 
+    .fim {
+        text-decoration: none;
+        color: #000;
+    }
 `
 export default Login;

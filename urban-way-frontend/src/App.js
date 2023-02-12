@@ -1,6 +1,7 @@
 import React from 'react';
 
 /*utils*/
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 /*Components */
 import Menu from './components/Menu';
@@ -14,11 +15,13 @@ import Login from './components/Login';
 function App() {
   return (
     <div>
-      <Menu />
-      <Home />
-      <Main />
-      <Prices />
-      <Login />
+      <BrowserRouter>
+        <Routes>
+          <Route exatc path='/' element={[<Menu />, <Home />, <Main />, <Prices />]} />
+          <Route exatc path='/login' element={<Login />} />
+        </Routes>
+      </BrowserRouter>
+
     </div>
   );
 }

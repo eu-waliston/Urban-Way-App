@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
+import { Link } from "react-router-dom";
+
 const Menu = () => {
     const [isNavExpanded, setIsNavExpanded] = React.useState(false);
 
@@ -31,7 +33,9 @@ const Menu = () => {
                     </li>
                     <li>
                         <a href="/login">
-                            <i class="bi bi-door-open"></i> Login
+                            <Link to={"/login"}>
+                                <i class="bi bi-door-open"></i> Login
+                            </Link>
                         </a>
                     </li>
                 </ul>
