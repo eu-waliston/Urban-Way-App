@@ -4,7 +4,7 @@ import fundo from './img/fundo.jpg';
 
 const Home = () => {
     return (
-        <INITIAL_SECTION style={{ backgroundImage:`url(${fundo})` }}>
+        <INITIAL_SECTION style={{ backgroundImage:`url(${fundo})` }} id="home">
             <div class="midle-div-home">
                 <h1 class="home--h1"><span class="square-1">U</span>rban Way.</h1>
                 <h2 class="home--h2">

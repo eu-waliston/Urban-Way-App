@@ -9,7 +9,7 @@ const Menu = () => {
             <i class="bi bi-list" id="btn-canva-control" onClick={() => {setIsNavExpanded(!isNavExpanded);}}></i>
 
             <nav className={isNavExpanded ? "canva-toggler" : "normal"}>
-                <a href="/">
+                <a href="#home">
                     <img src={require("./img/logo.png")} class="logo-img" alt="logo" />
                 </a>
                 <ul>
@@ -44,6 +44,7 @@ const Menu = () => {
 const MENU = styled.div`
     height: 100vh;
     position: fixed;
+    z-index: 30;
 
 
     #btn-canva-control {
