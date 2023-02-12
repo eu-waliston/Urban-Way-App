@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Prices = () => {
     return (
@@ -27,7 +28,9 @@ const Prices = () => {
                         <p>Sem comentarios</p>
                     </div>
                     <div class="btn_send">
-                        <button class="btn btn__1">Entrar</button>
+                        <Link to={"/login"}>
+                            <button class="btn btn__1">Entrar</button>
+                        </Link>
                     </div>
                 </div>
 
@@ -41,9 +44,9 @@ const Prices = () => {
                         <p>2Mb Limit</p>
                         <p>Sem comentarios</p>
                     </div>
-                    <div class="btn_send">
-                        <button class="btn btn__2">Entrar</button>
-                    </div>
+                    <Link to={"/login"}>
+                        <button class="btn btn__3">Entrar</button>
+                    </Link>
                 </div>
 
                 <div id="c__3">
@@ -57,7 +60,9 @@ const Prices = () => {
                         <p>Sem comentarios</p>
                     </div>
                     <div class="btn_send">
-                        <button class="btn btn__3">Entrar</button>
+                        <Link to={"/login"}>
+                            <button class="btn btn__3">Entrar</button>
+                        </Link>
                     </div>
                 </div>
             </div>
