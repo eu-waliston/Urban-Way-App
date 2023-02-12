@@ -2,16 +2,17 @@ import React from 'react';
 import styled from 'styled-components';
 import fundo from './img/fundo.jpg';
 
-import AOS from 'aos';
-import 'aos/dist/aos.css'; 
-AOS.init();
+/*Utils*/
+import 'animate.css';
 
 const Home = () => {
     return (
         <INITIAL_SECTION style={{ backgroundImage:`url(${fundo})` }} id="home">
             <div class="midle-div-home">
-                <h1 class="home--h1"><span class="square-1">U</span>rban Way.</h1>
-                <h2 class="home--h2">
+                <h1 class="home--h1 animate__animated animate__backInDown">
+                    <span class="square-1">U</span>rban Way.
+                </h1>
+                <h2 class="home--h2 animate__animated animate__backInLeft">
                     <span class="square-2">seu estilo, sua identidade!</span>
                 </h2>
             </div>

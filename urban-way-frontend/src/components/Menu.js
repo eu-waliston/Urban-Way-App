@@ -3,12 +3,14 @@ import styled from "styled-components";
 
 import { Link } from "react-router-dom";
 
+import 'animate.css';
+
 const Menu = () => {
-    const [isNavExpanded, setIsNavExpanded] = React.useState(false);
+    const [isNavExpanded, setIsNavExpanded] = React.useState(true);
 
     return (
         <MENU>
-            <i class="bi bi-list" id="btn-canva-control" onClick={() => {setIsNavExpanded(!isNavExpanded);}}></i>
+            <i className="bi bi-list animate__animated animate__backInDown" id="btn-canva-control" onClick={() => {setIsNavExpanded(!isNavExpanded);}}></i>
 
             <nav className={isNavExpanded ? "canva-toggler" : "normal"}>
                 <a href="#home">

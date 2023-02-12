@@ -2,11 +2,23 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+AOS.init();
+
 const Prices = () => {
     return (
         <DIV id="precos">
-            <h1 class="precos__h1">preços</h1>
-            <p class="precos__p">
+            <h1 
+                class="precos__h1"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+            >preços</h1>
+            <p 
+                class="precos__p"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+            >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
                 Alias, quas minima accusantium dignissimos ab, voluptate vero ullam, <br />
                 repellat aliquam suscipit odio explicabo. Perspiciatis atque nobis, <br />
@@ -16,7 +28,11 @@ const Prices = () => {
                 itaque?
             </p>
 
-            <div id="cards">
+            <div 
+                id="cards"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+            >
                 <div id="c__1">
                     <div class="card_spec">
                         <h1 class="card_title">Free</h1>

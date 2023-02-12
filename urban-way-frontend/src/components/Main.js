@@ -1,13 +1,25 @@
 import React from "react";
 import styled from "styled-components";
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+AOS.init();
+
 const Main = () => {
     return (
         <SECTION id="descubra">
-            <h1 class="descubra--h1">
+            <h1 
+                class="descubra--h1"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+            >
                 #Descubra e apaixone-se!
             </h1>
-            <div id="grid-images">
+            <div 
+                id="grid-images"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+            >
                 <img src={require("./img/top-img-1.jpg")} alt="modelos" class="img-grid" />
                 <img src={require("./img/top-img-2.jpg")} alt="modelos" class="img-grid" />
                 <img src={require("./img/top-img-3.jpg")} alt="modelos" class="img-grid" />
@@ -21,14 +33,22 @@ const Main = () => {
             </div>
 
             <div id="hall--da--fama">
-                <div id="side">
+                <div 
+                    id="side"
+                    data-aos="fade-up"
+                    data-aos-duration="3000"
+                >
                     <h1 class="hall--h1">hall da fama</h1>
                     <p class="hall--p-1">as imagens mais vistas do nosso site</p>
                     <p class="hall--p-2">vote na sua favorita!</p>
                     <button class="hall--btn">Vote</button>
                 </div>
 
-                <div class="grid--hall">
+                <div 
+                    class="grid--hall"
+                    data-aos="fade-up"
+                    data-aos-duration="3000"
+                >
                     <img src={require("./img/hall-1.jpg")} alt="hall da fama" class="img--hall R1" />
                     <img src={require("./img/hall-2.jpg")} alt="hall da fama" class="img--hall R2" />
                     <img src={require("./img/hall-3.jpg")} alt="hall da fama" class="img--hall R3" />
