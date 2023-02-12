@@ -11,6 +11,7 @@ import Prices from './components/Prices';
 
 /*Router Components*/
 import Login from './components/Login';
+import Register from './components/Register';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Routes>
           <Route exatc path='/' element={[<Menu />, <Home />, <Main />, <Prices />]} />
           <Route exatc path='/login' element={<Login />} />
+          <Route exatc path='/register' element={<Register />} />
         </Routes>
       </BrowserRouter>
 

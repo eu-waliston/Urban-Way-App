@@ -46,7 +46,7 @@ const Login = () => {
 const SECTION = styled.section`
 /* LOGIN PAGE */
 
-  background-color: var(--side-color);
+  background-color: #232324;
   height: 96vh;
   width: 100%;
 
@@ -62,7 +62,7 @@ const SECTION = styled.section`
     position: relative;
     top: 13%;
     font-size: 50px;
-    font-family: var(--font--title);
+    font-family:  "Carter One", cursive;
     }
 
     .form__control {

@@ -28,7 +28,9 @@ const Menu = () => {
                     </li>
                     <li>
                         <a href="/cadastro">
-                            <i class="bi bi-person"></i> Cadastre-se
+                            <Link to={"/register"}>
+                                <i class="bi bi-person"></i> Cadastre-se
+                            </Link>
                         </a>
                     </li>
                     <li>
