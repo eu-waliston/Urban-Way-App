@@ -3,7 +3,7 @@
 ### O Frontend da aplicação é construido  utilizando as tecnologias: React.Js e Styled Components
 ### O Backend da aplicação utilizará as tecnologias: MongoDB, Mongoose, Express e NodeJs
 
-### E outras tencnologias e bibliotecas como:
+### E outras tecnologias e bibliotecas como:
   - AOS Js
   - Axios
   - Bootstrap Icons
