@@ -8,6 +8,9 @@ import Home from './components/Home';
 import Main from './components/Main';
 import Prices from './components/Prices';
 
+/*Router Components*/
+import Login from './components/Login';
+
 function App() {
   return (
     <div>
@@ -15,6 +18,7 @@ function App() {
       <Home />
       <Main />
       <Prices />
+      <Login />
     </div>
   );
 }
