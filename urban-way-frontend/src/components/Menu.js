@@ -42,17 +42,20 @@ const Menu = () => {
 }
 
 const MENU = styled.div`
+    height: 100vh;
+    position: fixed;
+
 
     #btn-canva-control {
-    font-size: 50px;
-    cursor: pointer;
-    z-index: 2;
-    position: fixed;
-    top: 20px;
-    left: 10px;
-    color: #fff;
-    background-color: #232324;
-    border-radius: 10px;
+        font-size: 50px;
+        cursor: pointer;
+        z-index: 2;
+        position: fixed;
+        top: 20px;
+        left: 10px;
+        color: #fff;
+        background-color: #232324;
+        border-radius: 10px;
     }
 
     @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
@@ -72,6 +75,7 @@ const MENU = styled.div`
     .normal {
         background-color: #232324;
         left: 270px;
+        height: 100vh;
     }
 
     a {
